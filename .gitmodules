@@ -1,0 +1,3 @@
+[submodule "TD_GetPidFromProcName"]
+	path = TD_GetPidFromProcName
+	url = git@github.com:Tr1stanDevs/TD_GetPidFromProcName.git
