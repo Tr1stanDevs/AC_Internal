@@ -1,0 +1,9 @@
+[submodule "TD_GetPidFromProcName"]
+	path = TD_GetPidFromProcName
+	url = git@github.com:Tr1stanDevs/TD_GetPidFromProcName.git
+[submodule "TD_GetModuleBaseAddress"]
+	path = TD_GetModuleBaseAddress
+	url = git@github.com:Tr1stanDevs/TD_GetModuleBaseAddress.git
+[submodule "TD_Logging"]
+	path = TD_Logging
+	url = git@github.com:Tr1stanDevs/TD_Logging.git

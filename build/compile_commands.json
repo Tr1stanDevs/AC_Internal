@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/Users/simon/Desktop/AssaultCube_Internal/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -m32 -O0 -std=gnu++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles\\TD_GetModuleBaseAddress.dir\\TD_GetModuleBaseAddress\\TD_GetModuleBaseAddress.cpp.obj -c C:\\Users\\simon\\Desktop\\AssaultCube_Internal\\TD_GetModuleBaseAddress\\TD_GetModuleBaseAddress.cpp",
+  "file": "C:/Users/simon/Desktop/AssaultCube_Internal/TD_GetModuleBaseAddress/TD_GetModuleBaseAddress.cpp",
+  "output": "C:/Users/simon/Desktop/AssaultCube_Internal/build/CMakeFiles/TD_GetModuleBaseAddress.dir/TD_GetModuleBaseAddress/TD_GetModuleBaseAddress.cpp.obj"
+},
+{
+  "directory": "C:/Users/simon/Desktop/AssaultCube_Internal/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -m32 -O0 -std=gnu++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles\\TD_GetPidFromProcName.dir\\TD_GetPidFromProcName\\TD_GetPidFromProcName.cpp.obj -c C:\\Users\\simon\\Desktop\\AssaultCube_Internal\\TD_GetPidFromProcName\\TD_GetPidFromProcName.cpp",
+  "file": "C:/Users/simon/Desktop/AssaultCube_Internal/TD_GetPidFromProcName/TD_GetPidFromProcName.cpp",
+  "output": "C:/Users/simon/Desktop/AssaultCube_Internal/build/CMakeFiles/TD_GetPidFromProcName.dir/TD_GetPidFromProcName/TD_GetPidFromProcName.cpp.obj"
+},
+{
+  "directory": "C:/Users/simon/Desktop/AssaultCube_Internal/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DAC_DLL_EXPORTS -IC:/Users/simon/Desktop/AssaultCube_Internal/TD_GetModuleBaseAddress -IC:/Users/simon/Desktop/AssaultCube_Internal/TD_Logging -m32 -O0 -std=gnu++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles\\AC_DLL.dir\\DLL\\DllMain.cpp.obj -c C:\\Users\\simon\\Desktop\\AssaultCube_Internal\\DLL\\DllMain.cpp",
+  "file": "C:/Users/simon/Desktop/AssaultCube_Internal/DLL/DllMain.cpp",
+  "output": "C:/Users/simon/Desktop/AssaultCube_Internal/build/CMakeFiles/AC_DLL.dir/DLL/DllMain.cpp.obj"
+},
+{
+  "directory": "C:/Users/simon/Desktop/AssaultCube_Internal/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -IC:/Users/simon/Desktop/AssaultCube_Internal/TD_GetPidFromProcName -IC:/Users/simon/Desktop/AssaultCube_Internal/TD_Logging -m32 -O0 -std=gnu++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles\\AC_DLL_INJECTOR.dir\\Loader\\Loader.cpp.obj -c C:\\Users\\simon\\Desktop\\AssaultCube_Internal\\Loader\\Loader.cpp",
+  "file": "C:/Users/simon/Desktop/AssaultCube_Internal/Loader/Loader.cpp",
+  "output": "C:/Users/simon/Desktop/AssaultCube_Internal/build/CMakeFiles/AC_DLL_INJECTOR.dir/Loader/Loader.cpp.obj"
+}
+]
