@@ -23,7 +23,13 @@ void WINAPI Hack(HMODULE hModule) {
     uintptr_t PlayerObjOffset = 0x17E0A8;
     uintptr_t healthOffsetUI = 0xEC;                //4bytes
     uintptr_t NameOffset = 0x10;
-    uintptr_t AmmoOffset = 0x140;                //4bytes
+    uintptr_t TotalShotsFiredOffest = 0x0188;                //4bytes
+    uintptr_t SecondaryWeaponAmmoOffset = 0x012C;                //4bytes
+    uintptr_t SecondaryReloadingAmmoOffset = 0x0108;                //4bytes
+    uintptr_t AssaultRifeReloadingAmmoOffset = 0x011C;                //4bytes
+    uintptr_t GrandesOffset = 0x0144;                //4bytes
+    uintptr_t AssaultRifleAmmoOffset  = 0x0140;                //4bytes
+    uintptr_t AmorOffset = 0x00F0;                //4bytes
 
 
     uintptr_t RealHealthOffset =  0x408; //0xD010 //this is the offset to the entity *
@@ -47,14 +53,23 @@ void WINAPI Hack(HMODULE hModule) {
 
     TD_Logging::print("Player OBJ at: 0x%p\n", TD_Logging::LoggingLevels::LogLevel_INFO, LocalPlayer);
     TD_Logging::print("Current Health at: 0x%p\n", TD_Logging::LoggingLevels::LogLevel_INFO, (Healthaddr + RealHealthOffset) );
-    TD_Logging::print("Current Ammo at: 0x%p\n", TD_Logging::LoggingLevels::LogLevel_INFO, (uintptr_t*)(LocalPlayer + AmmoOffset) );
+    TD_Logging::print("Current Ammo at: 0x%p\n", TD_Logging::LoggingLevels::LogLevel_INFO, (uintptr_t*)(LocalPlayer + AssaultRifleAmmoOffset) );
 
     TD_Logging::print("Current Health: %lu\n", TD_Logging::LoggingLevels::LogLevel_INFO, *(int*)(Healthaddr + RealHealthOffset) );
-    TD_Logging::print("Current Ammo: %lu\n", TD_Logging::LoggingLevels::LogLevel_INFO, *(uintptr_t*)(LocalPlayer + AmmoOffset));
+    TD_Logging::print("Current Ammo: %lu\n", TD_Logging::LoggingLevels::LogLevel_INFO, *(uintptr_t*)(LocalPlayer + AssaultRifleAmmoOffset));
     
 
+
+    *(int*)(LocalPlayer + GrandesOffset) = 999;
+    *(int*)(LocalPlayer + AmorOffset) = 999;
+
+    *(int*)(LocalPlayer + SecondaryWeaponAmmoOffset) = 999;
+    *(int*)(LocalPlayer + SecondaryReloadingAmmoOffset) = 999;
+
+    *(int*)(LocalPlayer + AssaultRifeReloadingAmmoOffset) = 999;
+    *(int*)(LocalPlayer + AssaultRifleAmmoOffset) = 999;
+
     *(int*)(Healthaddr + RealHealthOffset) = 999;
-    *(int*)(LocalPlayer + AmmoOffset) = 999;
     *(int*)(LocalPlayer + healthOffsetUI) = 999;
 }
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserved) {
