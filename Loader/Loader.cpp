@@ -50,6 +50,5 @@ int main() {
     if (hThread) CloseHandle(hThread);
     
 
-    Sleep(5000);
     return 0;
 }
